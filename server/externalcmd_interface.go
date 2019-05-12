@@ -6,7 +6,7 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/yulibaozi/kubectl-switch/server/vars"
+	"github.com/caas-one/kubectl-switch/server/vars"
 )
 
 // externalCmdPools external cmd pool

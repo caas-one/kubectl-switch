@@ -4,9 +4,9 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/yulibaozi/kubectl-switch/server/fileutil"
+	"github.com/caas-one/kubectl-switch/server/fileutil"
 
-	"github.com/yulibaozi/kubectl-switch/server"
+	"github.com/caas-one/kubectl-switch/server"
 )
 
 // Remove remove cmd

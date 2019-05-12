@@ -5,7 +5,7 @@ import (
 	"regexp"
 	"unicode"
 
-	"github.com/yulibaozi/kubectl-switch/server"
+	"github.com/caas-one/kubectl-switch/server"
 )
 
 var _ server.SubCommand = &Register{}

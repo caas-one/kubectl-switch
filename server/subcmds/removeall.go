@@ -1,8 +1,8 @@
 package subcmds
 
 import (
-	"github.com/yulibaozi/kubectl-switch/server"
-	"github.com/yulibaozi/kubectl-switch/server/fileutil"
+	"github.com/caas-one/kubectl-switch/server"
+	"github.com/caas-one/kubectl-switch/server/fileutil"
 )
 
 // RemoveAll remove all cluster name

@@ -15,9 +15,9 @@
 package main
 
 import (
-	"github.com/yulibaozi/kubectl-switch/cmd"
-	_ "github.com/yulibaozi/kubectl-switch/server/externalcmds"
-	_ "github.com/yulibaozi/kubectl-switch/server/subcmds"
+	"github.com/caas-one/kubectl-switch/cmd"
+	_ "github.com/caas-one/kubectl-switch/server/externalcmds"
+	_ "github.com/caas-one/kubectl-switch/server/subcmds"
 )
 
 func main() {

@@ -9,7 +9,7 @@ import (
 	homedir "github.com/mitchellh/go-homedir"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
-	"github.com/yulibaozi/kubectl-switch/server"
+	"github.com/caas-one/kubectl-switch/server"
 )
 
 var cfgFile string

@@ -8,8 +8,8 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/yulibaozi/kubectl-switch/server/fileutil"
-	"github.com/yulibaozi/kubectl-switch/server/vars"
+	"github.com/caas-one/kubectl-switch/server/fileutil"
+	"github.com/caas-one/kubectl-switch/server/vars"
 	restclient "k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/clientcmd"
 	clientcmdapi "k8s.io/client-go/tools/clientcmd/api"

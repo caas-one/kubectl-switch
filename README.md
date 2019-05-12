@@ -8,12 +8,23 @@ kubectl-switch是一个kubernetes命令行工具插件,它做的事情非常简�
  
 ### 安装
 
+
+<g-emoji class="g-emoji" alias="warning" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png">⚠️</g-emoji>   **警告: `kubectl` 必须在1.12.0及以上**, 你可以使用`kubectl version`命令来查看是否满足前置条件
+
+如果需要安装`kubectl`, 请查看:[Install and Set Up kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
+
+```
+➜  ~ kubectl version
+
+GitVersion:"v1.14.1"
+```
+
 源码编译:
 
 ```
-go get -u github.com/yulibaozi/kubectl-switch
+go get -u github.com/caas-one/kubectl-switch
 
-cd $GOPATH/src/github.com/yulibaozi/kubectl-switch
+cd $GOPATH/src/github.com/caas-one/kubectl-switch
 
 go build .
 
@@ -24,16 +35,31 @@ mv  ./kubectl-switch /usr/local/bin/
 Mac :
 
 ```
-brew install yulibaozi/tap/kubectl-switch
+brew tap yulibaozi/tap && brew install kubectl-switch
 ```
 
-### 注意事项
+Linux:
 
-1. `kubectl` 版本要求:1.12.0或更高,你可以使用 `kubectl version` 来查看
+```
+export PLUGIN_VERSION=1.0.1
+# linux x86_64
+echo "https://github.com/yulibaozi/kubectl-switch/releases/download/v${PLUGIN_VERSION}/kubectl-switch_${PLUGIN_VERSION}_linux_amd64.tar.gz" | xargs curl -o kubectl-switch.tar.gz -Lv
+
+
+# macos
+echo "https://github.com/yulibaozi/kubectl-switch/releases/download/v${PLUGIN_VERSION}/kubectl-switch_${PLUGIN_VERSION}_darwin_amd64.tar.gz" | xargs curl -o kubectl-switch.tar.gz -Lv
+
+
+tar -zxvf kubectl-switch.tar.gz kubectl-switch
+
+sudo mv kubectl-switch /usr/local/bin/
+```
+
+
 
 ### 使用流程
 
-1. 当你安装完`kubectl-switch`后, 需要向`kubectl-switch`注册需要操作的集群
+step 1. 当你安装完`kubectl-switch`后, 需要向`kubectl-switch`注册需要操作的集群
 ```
 kubectl switch register      qa     /root/yulibaozi/admin.kubeconfig
 #                         集群名字   集群操作所需要config文件
@@ -46,7 +72,7 @@ kubectl switch list
 
 3. 查看当前`kubectl`操作的集群
 ```
-kubectl switch now
+kubectl switch where
 ```
 4. 切换`kubectl`操作的集群
 ```
@@ -79,7 +105,7 @@ Usage:
 Available Commands:
   help        Help about any command
   list        List all cluster message
-  now         View cluster of currently in use
+  where         View cluster of currently in use
   register    Register cluster in switch plugin
   remove      Remove the specified cluster name
   removeall   Removeall cluster config

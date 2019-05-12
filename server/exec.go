@@ -5,7 +5,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/yulibaozi/kubectl-switch/server/vars"
+	"github.com/caas-one/kubectl-switch/server/vars"
 )
 
 // func init() {

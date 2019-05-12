@@ -5,8 +5,8 @@ import (
 	"io/ioutil"
 	"path/filepath"
 
-	"github.com/yulibaozi/kubectl-switch/server"
-	"github.com/yulibaozi/kubectl-switch/server/fileutil"
+	"github.com/caas-one/kubectl-switch/server"
+	"github.com/caas-one/kubectl-switch/server/fileutil"
 )
 
 // List cmd

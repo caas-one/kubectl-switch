@@ -9,9 +9,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/yulibaozi/kubectl-switch/server/vars"
+	"github.com/caas-one/kubectl-switch/server/vars"
 
-	env "github.com/yulibaozi/kubectl-switch/server/environment"
+	env "github.com/caas-one/kubectl-switch/server/environment"
 )
 
 // GetBase get root path

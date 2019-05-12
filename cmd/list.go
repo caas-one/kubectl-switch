@@ -2,7 +2,7 @@ package cmd
 
 import (
 	"github.com/spf13/cobra"
-	"github.com/yulibaozi/kubectl-switch/server"
+	"github.com/caas-one/kubectl-switch/server"
 )
 
 // listCmd represents the list command

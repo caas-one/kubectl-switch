@@ -8,8 +8,8 @@ import (
 	"os/exec"
 	"strings"
 
-	"github.com/yulibaozi/kubectl-switch/server"
-	"github.com/yulibaozi/kubectl-switch/server/fileutil"
+	"github.com/caas-one/kubectl-switch/server"
+	"github.com/caas-one/kubectl-switch/server/fileutil"
 )
 
 func init() {
